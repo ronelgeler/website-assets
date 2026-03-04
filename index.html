@@ -41,6 +41,12 @@
           <input class="round-text-field w-input" name="Phone" placeholder="מה המספר שלך?" type="tel" required="">
           <input type="submit" class="dark-round-button w-button" value="לתיאום פגישה בחינם" style="background-color: #1f2937 !important; color: #ffffff !important; border: none;">
         </div>
+        <div style="text-align: right; margin-top: 15px; color: white; font-size: 0.95rem;">
+          <label style="display: inline-flex; align-items: center; gap: 8px; cursor: pointer; font-weight: normal;">
+            <input type="checkbox" name="Terms_Accepted" required style="width: 16px; height: 16px; margin: 0; cursor: pointer;">
+            <span>אני מאשר/ת שקראתי ואני מסכים/ה <a href="terms.html" target="_blank" style="color: #ffffff; text-decoration: underline;">לתקנון האתר</a></span>
+          </label>
+        </div>
         <p id="result-top" style="margin-top: 10px; display: none; color: white;"></p>
       </form>
       <div style="text-align: center; margin-top: -5px; position: relative; z-index: 10;">
@@ -230,7 +236,7 @@
 <section class="light-gray-section">
   <div class="container small">
     <h2 class="text-center" style="margin-bottom: 2rem;">שאלות ותשובות נפוצות</h2>
-    <div class="faq-wrapper-2">
+    <div class="faq-wrapper-2" id="faq-section">
       
       <div class="faq-block-2" onclick="toggleFaq(this)">
         <div class="faq-question-wrapper-2">
@@ -262,6 +268,46 @@
         </div>
       </div>
 
+      <div class="faq-block-2" onclick="toggleFaq(this)">
+        <div class="faq-question-wrapper-2">
+          <div class="faq-question-text-2">האם השירות כולל גם התייחסות לכלכלת המשפחה שלי?</div>
+          <svg class="faq-arrow-icon-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transition: transform 0.3s ease; width: 24px; height: 24px;"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="faq-answer-wrapper" style="display: none; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 0.5rem;">
+          <p class="faq-answer-text-2">בהחלט. אי אפשר להפריד לחלוטין בין העסק לבית. כחלק מהמודל שנייצר, נדאג להגדיר משיכת משכורת קבועה ויציבה מהעסק הביתה, כך שיהיה לך שקט נפשי גם בחיים האישיים.</p>
+        </div>
+      </div>
+
+      <div class="faq-block-2" onclick="toggleFaq(this)">
+        <div class="faq-question-wrapper-2">
+          <div class="faq-question-text-2">אין לי זמן להתעסק עם מספרים וטבלאות אקסל, האם תעשו את זה בשבילי?</div>
+          <svg class="faq-arrow-icon-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transition: transform 0.3s ease; width: 24px; height: 24px;"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="faq-answer-wrapper" style="display: none; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 0.5rem;">
+          <p class="faq-answer-text-2">המטרה שלי היא להקנות לך שליטה, לא לסבך אותך. אני בונה עבורך את המערכת והתשתית הפיננסית. לאחר ההטמעה, יידרש ממך להשקיע רק שעה אחת בשבוע כדי לשלוט בפיננסים שלך באמת ובמינימום מאמץ, בלי טבלאות מסובכות.</p>
+        </div>
+      </div>
+
+      <div class="faq-block-2" onclick="toggleFaq(this)">
+        <div class="faq-question-wrapper-2">
+          <div class="faq-question-text-2">מה ההבדל בינך לבין יועץ עסקי רגיל?</div>
+          <svg class="faq-arrow-icon-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transition: transform 0.3s ease; width: 24px; height: 24px;"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="faq-answer-wrapper" style="display: none; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 0.5rem;">
+          <p class="faq-answer-text-2">יועצים עסקיים מתמקדים לרוב בהגדלת מכירות, שיווק ופיתוח. אני מתמקד קודם כל ב"שורת הרווח" – איך לוודא שכל המאמצים שלך בשיווק באמת מתורגמים לכסף שנשאר לך בחשבון הבנק, ושהעסק לא צומח על חשבון התזרים.</p>
+        </div>
+      </div>
+
+      <div class="faq-block-2" onclick="toggleFaq(this)">
+        <div class="faq-question-wrapper-2">
+          <div class="faq-question-text-2">כמה זמן לוקח התהליך עד שרואים תוצאות בעסק?</div>
+          <svg class="faq-arrow-icon-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transition: transform 0.3s ease; width: 24px; height: 24px;"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="faq-answer-wrapper" style="display: none; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 0.5rem;">
+          <p class="faq-answer-text-2">סדר ראשוני ובהירות תזרימית מקבלים כבר מהפגישות הראשונות. בנייה של מודל כלכלי יציב ושינוי הרגלי הניהול לוקחים לרוב בין חודשיים לשלושה חודשים של עבודה משותפת וממוקדת.</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -277,6 +323,12 @@
           <input class="round-text-field w-input" name="Name" placeholder="איך קוראים לך?" type="text" required="">
           <input class="round-text-field w-input" name="Phone" placeholder="מה המספר שלך?" type="tel" required="">
           <input type="submit" class="dark-round-button w-button" value="לתיאום פגישה בחינם">
+        </div>
+        <div style="text-align: right; margin-top: 15px; color: white; font-size: 0.95rem;">
+          <label style="display: inline-flex; align-items: center; gap: 8px; cursor: pointer; font-weight: normal;">
+            <input type="checkbox" name="Terms_Accepted" required style="width: 16px; height: 16px; margin: 0; cursor: pointer;">
+            <span>אני מאשר/ת שקראתי ואני מסכים/ה <a href="terms.html" target="_blank" style="color: #ffffff; text-decoration: underline;">לתקנון האתר</a></span>
+          </label>
         </div>
         <p id="result-bottom" style="margin-top: 10px; display: none; color: white;"></p>
       </form>
