@@ -40,9 +40,6 @@
   <div class="container text-center" style="margin-top: 2rem; margin-bottom: 4rem;">
     <div class="form-block w-form">
       <form id="Lead-Form-Top" class="blue-form-wrapper">
-        <input type="hidden" name="access_key" value="c4e60218-6266-4fa8-a514-9cce087918d3">
-        <input type="hidden" name="from_name" value="טופס לידים">
-        <input type="hidden" name="subject" value="קיבלת פנייה חדשה!">
         <h2 class="form-header">לתיאום שיחת ייעוץ לבחינת התאמה לגמרי בחינם 👇🏻</h2>
         <div class="form-grid">
           <input class="round-text-field w-input" name="Name" placeholder="איך קוראים לך?" type="text" required="">
@@ -386,7 +383,7 @@ formIds.forEach(id => {
         result.style.display = "block";
         result.innerHTML = "שולח...";
 
-        fetch('https://api.web3forms.com/submit', {
+       fetch('/api/submit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -395,21 +392,24 @@ formIds.forEach(id => {
                 body: json
             })
             .then(async (response) => {
-                let json = await response.json();
+                let jsonResponse = await response.json();
                 if (response.status == 200) {
                     result.innerHTML = "הפרטים נשלחו בהצלחה! ניצור קשר בהקדם.";
                     form.reset();
                 } else {
                     result.innerHTML = "אירעה שגיאה. אנא נסה שוב.";
+                    console.error(jsonResponse); // This helps debug if something goes wrong
                 }
             })
             .catch(error => {
                 result.innerHTML = "משהו השתבש. אנא נסה שוב מאוחר יותר.";
+                console.error(error);
             })
             .then(function() {
                 setTimeout(() => {
                     result.style.display = "none";
                 }, 5000);
+            });
             });
     });
 });
