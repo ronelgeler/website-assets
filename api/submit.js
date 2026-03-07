@@ -69,6 +69,7 @@ module.exports = async function handler(req, res) {
   const currentTime = Math.floor(Date.now() / 1000);
 
   const fbPayload = {
+    test_event_code: "TEST98340", // התוספת החדשה למטרת טסטים
     data: [
       {
         event_name: "Lead", // שיניתי מ-Purchase ל-Lead בהתאם לטופס שלך
