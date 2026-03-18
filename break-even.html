@@ -36,60 +36,37 @@
 <body class="body">
 
 <section class="hero-section" style="padding-top: 0;">
-  <div class="hero-background w-clearfix" style="height: auto; padding-bottom: 8rem;"></div>
+  <div class="hero-background w-clearfix" style="height: auto; padding-bottom: 6rem;"></div>
   <div class="container large" style="position: relative; z-index: 10; text-align: center;">
     <div class="hero-topper" style="margin-top: 0; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 2rem; border-bottom-left-radius: 2rem; display: inline-block; padding: 0.8rem 2rem; font-size: 1.1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">רונאל גלר | <strong>שליטה פיננסית לבעלי עסקים</strong></div>
     
     <div style="padding-top: 3rem; max-width: 900px; margin: 0 auto;">
-      <h1>נקודת האיזון בעסק:<br> <span class="bg-text-green">המספר היחיד שאתם חייבים לדעת</span> כשאתם קמים בבוקר</h1>
-      <p class="extra-big-text" style="color: rgba(255,255,255,0.9); margin-top: 1.5rem;">מחשבון מהיר שיגלה לכם בדיוק כמה העסק צריך להכניס בחודש רק כדי לשרוד (ומהרגע הזה – להתחיל להרוויח).</p>
+      <h2 style="color: var(--brand-green); font-size: 1.5rem; margin-bottom: 0.5rem; font-weight: bold;">רווח נקי | נקודת האיזון</h2>
+      <h1 style="font-size: 3.5rem; margin-bottom: 1.5rem; line-height: 1.2;">
+        המספר היחיד שאתם חייבים לדעת<br> <span class="bg-text-green">כשאתם קמים בבוקר</span>
+      </h1>
+      <p class="extra-big-text" style="color: rgba(255,255,255,0.9); margin-top: 1.5rem; line-height: 1.6;">
+        בעלי עסקים רבים עובדים קשה, מוכרים הרבה, אבל בסוף החודש לא מבינים לאן הכסף נעלם.<br>
+        הנה מחשבון מהיר שיגלה לכם בדיוק כמה העסק צריך להכניס בחודש רק כדי לשרוד (ומהרגע הזה – להתחיל להרוויח).
+      </p>
     </div>
   </div>
 </section>
 
-<section class="light-gray-section calculator-section">
-  <div class="container small">
-    <div class="calculator-card" style="margin-top: -6rem;">
-      <h2 class="text-center" style="color: #2d2d2d; margin-bottom: 2rem;">מחשבון נקודת איזון (Break-Even)</h2>
-      
-      <div class="form-block">
-        <form id="calculator-form">
-          <div style="margin-bottom: 1.5rem;">
-            <label for="fixedExpenses" style="display: block; margin-bottom: 0.5rem; font-weight: bold; color: #2d2d2d;">1. סך הכל הוצאות קבועות לחודש (₪)</label>
-            <p style="font-size: 0.95rem; color: #666; margin-top: -0.2rem; margin-bottom: 0.5rem;">שכירות, ארנונה, משכורות עובדים קבועים, הלוואות, ביטוחים, שיווק קבוע וכו'. ההוצאות שיורדות גם אם לא מכרתם שקל.</p>
-            <input type="number" id="fixedExpenses" class="calc-input" placeholder="לדוגמה: 25000" required>
-          </div>
-          
-          <div style="margin-bottom: 2rem;">
-            <label for="grossMargin" style="display: block; margin-bottom: 0.5rem; font-weight: bold; color: #2d2d2d;">2. אחוז רווח גולמי ממוצע (%)</label>
-            <p style="font-size: 0.95rem; color: #666; margin-top: -0.2rem; margin-bottom: 0.5rem;">כמה אחוז מכל מכירה נשאר לכם אחרי שהורדתם את העלות הישירה של המוצר/השירות? (סחורה, משלוח, חומרי גלם).</p>
-            <input type="number" id="grossMargin" class="calc-input" placeholder="לדוגמה: 40" min="1" max="100" required>
-          </div>
-
-          <button type="submit" class="calc-button">חשב עכשיו את המספר שלי</button>
-        </form>
-
-        <div id="calculator-result" class="result-box" style="display: none;">
-          <h3 style="margin-bottom: 0.5rem;">יעד מכירות מינימלי לחודש:</h3>
-          <div class="result-number" id="result-number">0 ₪</div>
-          <p class="result-warning">מתחת לסכום הזה העסק מפסיד כסף.<br><strong>כל שקל מעל המספר הזה הוא רווח אמיתי.</strong></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="white-section">
+<section class="white-section" style="padding-top: 4rem;">
   <div class="container large">
+    <div style="text-align: center; margin-bottom: 4rem;">
+      <h2 style="font-size: 2.8rem;">הנה איך מחשבים את זה ב-3 דקות ומפסיקים לנחש</h2>
+    </div>
+    
     <div class="pains-section-grid">
       <div>
-        <h2>הנה איך מחשבים את זה ב-3 דקות ומפסיקים לנחש</h2>
-        <h3 class="red-text" style="font-size: 1.5rem; margin-top: 2rem;">01. תכירו את המפלצת: ההוצאות הקבועות</h3>
-        <p>אלה ההוצאות שקיימות גם אם ההכנסות שלכם יהיו 0 בחודש הקרוב. שכירות, ארנונה, מסים קבועים, ביטוחים, משכורות בסיס לעובדים (ולעצמכם!), הלוואות לעסק. תעשו רשימה של הכל ותחברו.</p>
+        <h3 class="red-text" style="font-size: 1.5rem; margin-top: 0;">01. תכירו את המפלצת: ההוצאות הקבועות</h3>
+        <p style="font-size: 1.2rem;">אלה ההוצאות שקיימות גם אם ההכנסות שלכם יהיו 0 בחודש הקרוב. שכירות, ארנונה, מסים קבועים, ביטוחים, משכורות בסיס לעובדים (ולעצמכם!), הלוואות לעסק. תעשו רשימה של הכל ותחברו.</p>
         
         <h3 style="font-size: 1.5rem; margin-top: 2rem; color: var(--brand-green);">02. האשליה הנפוצה ביותר: "מכרתי ב-100, הרווחתי 100"</h3>
-        <p>כאן רוב העסקים נופלים. כשאתם מוכרים שירות או מוצר ב-100 ₪, כמה באמת נשאר לכם אחרי שהורדתם את העלות הישירה שלו? (חומרי גלם, סחורה, עלויות שילוח, אריזה, עמלת סליקה).</p>
-        <p>אם עלות המוצר שלכם היא 60 ₪, נשארו לכם 40 ₪. <strong class="yellow-marker">אחוז הרווח הגולמי שלכם הוא 40%.</strong></p>
+        <p style="font-size: 1.2rem;">כאן רוב העסקים נופלים. כשאתם מוכרים שירות או מוצר ב-100 ₪, כמה באמת נשאר לכם אחרי שהורדתם את העלות הישירה שלו? (חומרי גלם, סחורה, עלויות שילוח, אריזה, עמלת סליקה).</p>
+        <p style="font-size: 1.2rem;">אם עלות המוצר שלכם היא 60 ₪, נשארו לכם 40 ₪. <strong class="yellow-marker">אחוז הרווח הגולמי שלכם הוא 40%.</strong></p>
         
         <h3 style="font-size: 1.5rem; margin-top: 2rem;">03. הנוסחה שתשנה לכם את החיים</h3>
         <div class="blue-list-block" style="margin-top: 1rem; margin-bottom: 1rem; justify-content: flex-start; text-align: right;">
@@ -97,7 +74,7 @@
             הוצאות קבועות לחלק לרווח הגולמי (%) = נקודת האיזון
           </div>
         </div>
-        <p>זהו. המספר הזה הוא <strong>הקו האדום שלכם</strong>. עד שלא הגעתם אליו בחודש הנוכחי - אתם עובדים כדי לכסות עלויות. משם והלאה? כל שקל שנכנס הוא רווח אמיתי.</p>
+        <p style="font-size: 1.2rem;">זהו. המספר הזה הוא <strong>הקו האדום שלכם</strong>. עד שלא הגעתם אליו בחודש הנוכחי - אתם עובדים כדי לכסות עלויות. משם והלאה? כל שקל שנכנס הוא רווח אמיתי.</p>
       </div>
       <div style="text-align: center;">
         <img src="chart.png" alt="תרשים נקודת איזון ורווחים" class="pains-chart-image" loading="lazy">
@@ -106,21 +83,53 @@
   </div>
 </section>
 
-<section class="dark-section text-center">
+<section class="light-gray-section calculator-section" style="padding-top: 4rem; padding-bottom: 4rem;">
   <div class="container small">
-    <h2>אז מה עושים עם זה מחר בבוקר?</h2>
-    <div class="onboarding-steps-wrapper" style="margin-top: 3rem;">
-      <div class="blue-list-block onboarding" style="background-color: #374151 !important; justify-content: flex-start;">
-        <div class="onboarding-number">1</div>
-        <div><strong>מחשבים את המספר שלכם:</strong> השתמשו במחשבון למעלה. היו כנים עם עצמכם על כל ההוצאות.</div>
+    <div class="calculator-card" style="margin-top: 0; box-shadow: 0 10px 40px rgba(0,0,0,0.1);">
+      <h2 class="text-center" style="color: #2d2d2d; margin-bottom: 2rem; font-size: 2.5rem;">מחשבון נקודת איזון</h2>
+      
+      <div class="form-block">
+        <form id="calculator-form">
+          <div style="margin-bottom: 1.5rem;">
+            <label for="fixedExpenses" style="display: block; margin-bottom: 0.5rem; font-weight: bold; color: #2d2d2d; font-size: 1.3rem;">1. סך הכל הוצאות קבועות לחודש (₪)</label>
+            <p style="font-size: 1rem; color: #666; margin-top: -0.2rem; margin-bottom: 0.8rem;">שכירות, ארנונה, משכורות עובדים קבועים, הלוואות, ביטוחים, שיווק קבוע וכו'. ההוצאות שיורדות גם אם לא מכרתם שקל.</p>
+            <input type="number" id="fixedExpenses" class="calc-input" placeholder="לדוגמה: 25000" required>
+          </div>
+          
+          <div style="margin-bottom: 2rem;">
+            <label for="grossMargin" style="display: block; margin-bottom: 0.5rem; font-weight: bold; color: #2d2d2d; font-size: 1.3rem;">2. אחוז רווח גולמי ממוצע (%)</label>
+            <p style="font-size: 1rem; color: #666; margin-top: -0.2rem; margin-bottom: 0.8rem;">כמה אחוז מכל מכירה נשאר לכם אחרי שהורדתם את העלות הישירה של המוצר/השירות? (סחורה, משלוח, חומרי גלם).</p>
+            <input type="number" id="grossMargin" class="calc-input" placeholder="לדוגמה: 40" min="1" max="100" required>
+          </div>
+
+          <button type="submit" class="calc-button" style="padding: 1.2rem; font-size: 1.5rem;">חשב עכשיו את המספר שלי</button>
+        </form>
+
+        <div id="calculator-result" class="result-box" style="display: none; margin-top: 2.5rem;">
+          <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem; color: #2d2d2d;">יעד מכירות מינימלי לחודש:</h3>
+          <div class="result-number" id="result-number" style="font-size: 4rem;">0 ₪</div>
+          <p class="result-warning" style="font-size: 1.2rem; margin-top: 1rem;">מתחת לסכום הזה העסק מפסיד כסף.<br><strong style="color: var(--brand-green);">כל שקל מעל המספר הזה הוא רווח אמיתי.</strong></p>
+        </div>
       </div>
-      <div class="blue-list-block onboarding" style="background-color: #374151 !important; justify-content: flex-start;">
-        <div><strong>תולים את המספר מול העיניים:</strong> כולם בעסק צריכים לדעת מהו היעד המינימלי לחודש.</div>
-        <div class="onboarding-number">2</div>
+    </div>
+  </div>
+</section>
+
+<section class="dark-section text-center" style="padding-top: 4rem; padding-bottom: 4rem;">
+  <div class="container small">
+    <h2 style="font-size: 2.8rem; margin-bottom: 1rem;">אז מה עושים עם זה מחר בבוקר?</h2>
+    <div class="onboarding-steps-wrapper" style="margin-top: 3rem; max-width: 40rem; margin-left: auto; margin-right: auto; text-align: right;">
+      <div class="blue-list-block onboarding" style="background-color: #374151 !important; justify-content: flex-start; padding-right: 5rem !important;">
+        <div class="onboarding-number" style="right: 1rem !important;">1</div>
+        <div style="font-size: 1.3rem;"><strong>מחשבים את המספר שלכם:</strong> השתמשו במחשבון למעלה. היו כנים עם עצמכם על כל ההוצאות.</div>
       </div>
-      <div class="blue-list-block onboarding" style="background-color: var(--brand-green) !important; justify-content: flex-start;">
-        <div><strong>בודקים כל יום:</strong> עוקבים אחרי המכירות אל מול היעד. לא מחכים לסוף החודש כדי לגלות שיש בעיה.</div>
-        <div class="onboarding-number">3</div>
+      <div class="blue-list-block onboarding" style="background-color: #374151 !important; justify-content: flex-start; padding-right: 5rem !important;">
+        <div class="onboarding-number" style="right: 1rem !important;">2</div>
+        <div style="font-size: 1.3rem;"><strong>תולים את המספר מול העיניים:</strong> כולם בעסק צריכים לדעת מהו היעד המינימלי לחודש.</div>
+      </div>
+      <div class="blue-list-block onboarding" style="background-color: var(--brand-green) !important; justify-content: flex-start; padding-right: 5rem !important;">
+        <div class="onboarding-number" style="right: 1rem !important;">3</div>
+        <div style="font-size: 1.3rem;"><strong>בודקים כל יום:</strong> עוקבים אחרי המכירות אל מול היעד. לא מחכים לסוף החודש כדי לגלות שיש בעיה.</div>
       </div>
     </div>
   </div>
@@ -129,9 +138,9 @@
 <section id="Cta" class="half-dark-section">
   <div class="container text-center">
     <div class="form-block w-form">
-      <form id="Lead-Form-BreakEven" class="blue-form-wrapper">
-        <h2 class="form-header">מרגישים שאתם הולכים על חבל דק?</h2>
-        <p style="margin-bottom: 2rem; color: #f0fdf4;">אם גיליתם שנקודת האיזון שלכם גבוהה מדי, או שאתם פשוט לא מצליחים לעבור אותה ולהשאיר כסף בכיס – הגיע הזמן לעשות סדר במספרים.<br><br><strong>השאירו פרטים ונחזור אליכם לתיאום פגישת אסטרטגיה כלכלית בחינם 👇🏻</strong></p>
+      <form id="Lead-Form-BreakEven" class="blue-form-wrapper" style="max-width: 800px; margin: 0 auto;">
+        <h2 class="form-header" style="font-size: 2.5rem;">מרגישים שאתם הולכים על חבל דק?</h2>
+        <p style="margin-bottom: 2rem; color: #f0fdf4; font-size: 1.3rem;">אם גיליתם שנקודת האיזון שלכם גבוהה מדי, או שאתם פשוט לא מצליחים לעבור אותה ולהשאיר כסף בכיס – הגיע הזמן לעשות סדר במספרים.<br><br><strong>השאירו פרטים ונחזור אליכם לתיאום פגישת אסטרטגיה כלכלית בחינם 👇🏻</strong></p>
         
         <div class="form-grid">
           <input class="round-text-field w-input" name="Name" placeholder="איך קוראים לך?" type="text" required aria-label="שם מלא">
